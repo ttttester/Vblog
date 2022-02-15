@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vblog
+spec:
+  replicas: 1
+  selector:
+    app: vblog
+  template:
+    metadata:
+      labels:
+        app: vblog
+    spec:
+      containers:
+      - name: vblog
+        image: 192.168.132.12:85/vblog/blogserver:latest
+        ports:
+        - containerPort: 8081
