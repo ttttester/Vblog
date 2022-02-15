@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vblog
+spec:
+  type: NodePort
+  ports:
+    - name: port1
+      port: 8081
+      nodePort: 30015
+      protocol: TCP
+#    - name: port2
+#      port: 801
+#      nodePort: 30014
+#      protocol: TCP
+  selector:
+    app: vblog
