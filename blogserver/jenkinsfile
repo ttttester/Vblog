@@ -80,9 +80,9 @@ node('132.10') {
         // sh 'kubectl delete ns vblog'
         // sh "kubectl create ns vblog"
         sh "cd blogserver/k8s && kubectl apply -f vblog_ns.yaml"
-        sh 'kubectl create secret docker-registry vblog -n vblog1 --docker-server=192.168.132.12:85 --docker-username=test --docker-password=Test123456'
-        sh "cd blogserver/k8s && kubectl apply -f vblog_deploy.yaml -n vblog1"
-        sh "cd blogserver/k8s && kubectl apply -f vblog_svc.yaml -n vblog1"
+        sh 'kubectl create secret docker-registry vblog -n vblog --docker-server=192.168.132.12:85 --docker-username=test --docker-password=Test123456'
+        sh "cd blogserver/k8s && kubectl apply -f vblog_deploy.yaml -n vblog"
+        sh "cd blogserver/k8s && kubectl apply -f vblog_svc.yaml -n vblog"
     }
     
 }
