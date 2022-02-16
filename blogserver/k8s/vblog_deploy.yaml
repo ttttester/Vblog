@@ -17,3 +17,5 @@ spec:
         image: 192.168.132.12:85/vblog/blogserver:latest
         ports:
         - containerPort: 8081
+      imagePullSecrets:
+      - name: regcred
