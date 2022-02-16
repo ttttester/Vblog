@@ -18,4 +18,4 @@ spec:
         ports:
         - containerPort: 8081
       imagePullSecrets:
-      - name: regcred
+      - name: vblog
