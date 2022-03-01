@@ -1,6 +1,4 @@
-扫码加微信（微信ID：**a_java_boy2**），备注V部落，进群讨论。
-
-![](https://user-images.githubusercontent.com/6023444/75459026-ba70d500-59b9-11ea-8cbd-3d5889f356c4.png)
+测试用，出处参考：https://github.com/lenve/VBlog
 
 V 部落姊妹篇：[https://github.com/lenve/vhr](https://github.com/lenve/vhr)
 
@@ -69,7 +67,7 @@ V部落是一个多用户博客管理平台，采用Vue+SpringBoot开发。
 
 ```
 git@github.com:lenve/VBlog.git
-```  
+```
 
 2.找到blogserver项目中resources目录下的vueblog.sql文件，在MySQL数据库中执行  
 3.根据自己本地情况修改数据库配置，数据库配置在SpringBoot项目的application.properties中  
@@ -85,7 +83,7 @@ npm install
 
 # 在 localhost:8080 启动项目
 npm run dev
-```  
+```
 
 由于我在vueblog项目中已经配置了端口转发，将数据转发到SpringBoot上，因此项目启动之后，在浏览器中输入```http://localhost:8080```就可以访问我们的前端项目了，所有的请求通过端口转发将数据传到SpringBoot中（注意此时不要关闭SpringBoot项目）。  
 
@@ -93,7 +91,7 @@ npm run dev
 
 ```
 npm run build
-```  
+```
 
 该命令执行成功之后，vueblog目录下生成一个dist文件夹，将该文件夹中的两个文件static和index.html拷贝到SpringBoot项目中resources/static/目录下，然后就可以像第4步那样直接访问了。  
 
@@ -105,15 +103,3 @@ npm run build
 
 1.[vue-echarts](https://github.com/Justineo/vue-echarts)  
 2.[mavonEditor](https://github.com/hinesboy/mavonEditor)  
-
-# License
-
-MIT
-
-**欢迎小伙伴们star、fork。**  
-
-## 其他
-
-关注公众号**江南一点雨**，专注于 Spring Boot+微服务，定期视频教程分享，关注后回复 Java ，领取松哥为你精心准备的 Java 干货！
-
-![公众号二维码](http://www.javaboy.org/images/sb/javaboy.jpg)  
